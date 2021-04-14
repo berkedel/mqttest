@@ -1,15 +1,24 @@
 {
   "name": "mqttest",
   "version": "1.0.0",
-  "description": "",
+  "description": "MQTT broker demo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/berkedel/mqttest.git"
+  },
   "main": "index.js",
   "scripts": {
+    "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mosca": "^2.0.2"
+    "aedes": "^0.45.0",
+    "websocket-stream": "^5.5.2"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
